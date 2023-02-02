@@ -1,0 +1,228 @@
+/* Author:Biji Raju */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+/* BANNER */
+.banner {
+    background-image: url(../images/academy-banner.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+.banner h1 {
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+}
+.banner-text {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-text img {
+    align-self: flex-end;
+}
+.heading {
+    text-align: right;
+    color: #1e2531;
+    font: weight 600px;
+}
+/* PAGE 2 */
+.side-image {
+    padding: 5%;
+    width: 100%;
+}
+.image-side-content {
+    display: flex;
+    position: relative;
+}
+.side-text {
+    background-color: #1e2531;
+    color: #20b2aa;
+    padding: 4%;
+    position: absolute;
+    top: 30%;
+    right: 14%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.side-text p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.side-text p::before {
+    content: "{";
+    color: #d61355;
+    padding-right: 10px;
+}
+.side-text p::after {
+    content: "}";
+    color: #d61355;
+    padding-left: 10px;
+}
+
+.description {
+    color: #252525;
+    text-align: center;
+    padding: 5% 9%;
+    font-size: 20px;
+    line-height: 30px;
+}
+/* PAGE 3 */
+.module {
+    background-image: url(../images/modulebg.jpg);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.module p {
+    background-color: rgba(30, 37, 49, 0.5);
+    border-radius: 10px;
+    width: 22%;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+.test-interview {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left {
+    background-image: url(../images/testsbg.jpg);
+    width: 50%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background-image: url(../images/intrvwbg.jpg);
+    width: 50%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test-interview-content {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 25% 0;
+    line-height: 20px;
+}
+/* PAGE 4 */
+.footer {
+    padding: 8%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+}
+.address {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    width: 100%;
+}
+.footer a {
+    width: 15%;
+    text-decoration: none;
+    text-align: center;
+}
+footer h1 {
+    font-size: large;
+}
+.address-details {
+    text-align: center;
+}
+.address-details h3 {
+    padding-bottom: 5%;
+}
+button {
+    color: #ff8800;
+    border: 1px solid #ff8800;
+    padding: 5%;
+    width: 70%;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.bottom {
+    padding-top: 10%;
+}
+@media screen and (max-width: 576px) {
+    .banner {
+        background-image: none;
+        background-color: #bbc2ca;
+    }
+    .image-side-content {
+        display: flex;
+        flex-wrap: wrap;
+        position: static;
+    }
+    .side-text {
+        position: static;
+        right: -29px;
+        width: 100%;
+    }
+    .side-text p {
+        font-size: 15px;
+    }
+    .side-image img {
+        width: 100%;
+    }
+    .side-image {
+        padding: 0;
+    }
+
+    .left {
+        background-repeat: no-repeat;
+        width: 100%;
+        height: fit-content;
+    }
+    .right {
+        background-repeat: no-repeat;
+        width: 100%;
+        height: fit-content;
+    }
+    .test-interview {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .test-interview-content {
+        margin: 3%;
+    }
+    .module p {
+        width: 45%;
+    }
+    .footer a {
+        width: 50%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: fit-content;
+    }
+}

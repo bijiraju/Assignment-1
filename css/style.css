@@ -51,7 +51,8 @@
     padding: 4%;
     position: absolute;
     top: 30%;
-    right: 14%;
+    width: 50%;
+    right: 10%;
     display: flex;
     gap: 15px;
     flex-direction: column;
@@ -94,9 +95,10 @@
     background-color: rgba(30, 37, 49, 0.5);
     border-radius: 10px;
     width: 22%;
+    height: 10%;
     color: #fff;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .test-interview {
@@ -162,8 +164,9 @@ button {
     color: #ff8800;
     border: 1px solid #ff8800;
     padding: 5%;
-    width: 70%;
-    font-size: 14px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
     background-color: #fff;
     border-radius: 5px;
     text-decoration: none;

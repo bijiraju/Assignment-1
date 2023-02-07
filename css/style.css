@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
 /* BANNER */
 .banner {
     background-image: url(../images/academy-banner.jpg);
@@ -37,6 +38,7 @@
     font: weight 600px;
 }
 /* PAGE 2 */
+
 .side-image {
     padding: 5%;
     width: 100%;
